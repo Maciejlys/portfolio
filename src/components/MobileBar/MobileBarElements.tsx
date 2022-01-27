@@ -3,7 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 interface MobileBarContainerProps {
-  isOpen: boolean;
+  isOpen?: boolean;
 }
 
 export const MobileBarContainer = styled.aside<MobileBarContainerProps>`
@@ -11,7 +11,7 @@ export const MobileBarContainer = styled.aside<MobileBarContainerProps>`
   z-index: 100;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(10, 25, 47, 95);
   display: grid;
   align-items: center;
   top: 0;
