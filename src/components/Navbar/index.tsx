@@ -37,10 +37,9 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
       <Nav
         animate={{
           top: scrollingDown ? 0 : -200,
-          opacity: scrollingDown ? 1 : 0,
         }}
-        initial={{ top: 0, opacity: 1 }}
-        transition={{ opacity: { duration: 0.5 }, top: { duration: 1 } }}>
+        initial={{ top: 0 }}
+        transition={{ top: { duration: 0.5 } }}>
         <NavContainer>
           <NavLogo src={importFromPublic("assets/logo.png")} />
           <MobileIcon onClick={toggleMenu}>
