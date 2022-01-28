@@ -12,5 +12,37 @@ export const GlobalStyles = createGlobalStyle`
   color: #fafafa;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+
+    @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    60%{
+      opacity: 0;
+    }
+    75%{
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+    @keyframes slideInFromRight {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    75% {
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 `;

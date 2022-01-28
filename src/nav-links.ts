@@ -13,7 +13,7 @@ export const navigationLinks = [
     link: "experience",
   },
   {
-    title: "Work",
+    title: "My work",
     link: "work",
   },
   {

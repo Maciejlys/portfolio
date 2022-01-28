@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
-export const Nav = styled.nav`
+export const Nav = styled(motion.nav)`
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,10 +25,9 @@ export const NavContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-  background-color: rgba(1, 1, 1, 0.1);
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled.img`
   background: transparent;
   justify-self: flex-start;
   cursor: pointer;

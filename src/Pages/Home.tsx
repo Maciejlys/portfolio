@@ -18,6 +18,7 @@ export const Home = () => {
       <Navbar toggleMenu={toggleMenu} />
       <MobileBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <HeroSection />
+      <HeroSection />
     </>
   );
 };
