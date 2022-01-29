@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   CloseIcon,
   Icon,
@@ -19,8 +19,8 @@ const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
         </Icon>
         <Wrapper>
           <Menu>
-            {navigationLinks.map((link) => (
-              <MobileLink to={link.link} onClick={toggleMenu}>
+            {navigationLinks.map((link, i) => (
+              <MobileLink key={i} to={link.link} onClick={toggleMenu}>
                 {link.title}
               </MobileLink>
             ))}

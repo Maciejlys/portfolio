@@ -11,7 +11,7 @@ export const Nav = styled(motion.nav)`
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(10, 25, 47, 1);
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
   @media (max-width: 960px) {
   }

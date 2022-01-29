@@ -1,5 +1,6 @@
 import React from "react";
-import { importFromPublic } from "../utils/publicImportUtil";
+import { importFromPublic } from "../../utils/publicImportUtil";
+
 import {
   HeroBg,
   HeroContainer,
@@ -33,3 +34,5 @@ export const HeroSection: React.FC<indexProps> = () => {
     </HeroContainer>
   );
 };
+
+export default HeroSection;

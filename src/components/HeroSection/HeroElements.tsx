@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 91.3vh;
+  height: 700px;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -89,7 +89,6 @@ export const HeroSpan = styled.span`
 
 export const HeroP = styled.p`
   background-color: transparent;
-
   color: #cacaca;
   font-size: 18px;
   text-align: center;

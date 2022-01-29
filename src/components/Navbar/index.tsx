@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { navigationLinks } from "../../nav-links";
 import { NavProps } from "../../Pages/Home";
 import { importFromPublic } from "../../utils/publicImportUtil";
+import { animateScroll } from "react-scroll";
 import {
   MobileIcon,
   Nav,
@@ -16,8 +17,10 @@ import {
 export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
   const [scrollingDown, setScrollingDown] = useState(false);
   const [lastPos, setLastPos] = useState(0);
+  const [reactScrollUsed, setReactScrollUsed] = useState(false);
 
   const handleScroll = () => {
+    console.log("b");
     const currPos = window.scrollY;
     const isScrollingUp = currPos < lastPos;
 
@@ -32,6 +35,10 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
     };
   }, [lastPos]);
 
+  const toggleHome = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav
@@ -41,14 +48,19 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
         initial={{ top: 0 }}
         transition={{ top: { duration: 0.5 } }}>
         <NavContainer>
-          <NavLogo src={importFromPublic("assets/logo.png")} />
+          <NavLogo
+            onClick={toggleHome}
+            src={importFromPublic("assets/logo.png")}
+          />
           <MobileIcon onClick={toggleMenu}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            {navigationLinks.map((link) => (
+            {navigationLinks.map((link, i) => (
               <NavItem>
-                <NavLinks to={link.link}>{link.title}</NavLinks>
+                <NavLinks key={i} to={link.link} smooth={true} duration={500}>
+                  {link.title}
+                </NavLinks>
               </NavItem>
             ))}
           </NavMenu>
