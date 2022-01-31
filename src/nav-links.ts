@@ -10,7 +10,7 @@ export const navigationLinks = [
   },
   {
     title: "Experience",
-    link: "experiance",
+    link: "experience",
   },
   {
     title: "Skills",

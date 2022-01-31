@@ -84,8 +84,12 @@ export const Heading = styled.h1<HeadingProps>`
   font-weight: 700;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 26px;
   }
 `;
 
@@ -99,6 +103,14 @@ export const Subtitle = styled.p<SubtitleProps>`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#f7f8fa")};
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 `;
 
 export const BtnWrapper = styled.div`
@@ -110,6 +122,9 @@ export const BtnWrapper = styled.div`
 export const ImgWrapper = styled.div`
   max-width: 555px;
   height: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 450px;
+  }
 `;
 
 export const Img = styled.img`

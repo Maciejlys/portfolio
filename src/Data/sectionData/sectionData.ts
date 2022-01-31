@@ -36,16 +36,18 @@ export const about = {
   darkText: false,
 };
 
-export const experiance = {
-  id: "experiance",
+export const experience = {
+  id: "experience",
   lightBg: true,
   lightText: false,
   topLine: "",
-  headLine: "My experiance",
+  headLine: "My experience",
   description: [
-    "I have no prior experiance in comericial projects," +
-      "but what I lack in professional experiance I make up " +
+    "I have no prior experience in comericial projects, " +
+      "but what I lack in professional experience I make up " +
       "with my enthusiasm and drive to learn.",
+    "Right now I am focusing on learning frontend development as much as I can in " +
+      "my free time",
   ],
   buttonLabel: "button",
   imgStart: true,

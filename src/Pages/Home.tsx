@@ -3,7 +3,7 @@ import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Section";
-import { about, experiance } from "../sectionData/sectionData";
+import { about, experience } from "../Data/sectionData/sectionData";
 import SkillsSection from "../components/SkillsSection";
 
 export interface NavProps {
@@ -23,7 +23,7 @@ export const Home = () => {
       <MobileBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <HeroSection />
       <Section {...about} />
-      <Section {...experiance} />
+      <Section {...experience} />
       <SkillsSection />
     </>
   );
