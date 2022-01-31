@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
-import ExperienceSection from "../components/ExperienceSection";
+import Section from "../components/Section";
+import { about } from "../sectionData/sectionData";
 export interface NavProps {
   toggleMenu: () => void;
   isOpen?: boolean;
@@ -20,8 +20,7 @@ export const Home = () => {
       <Navbar toggleMenu={toggleMenu} />
       <MobileBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <HeroSection />
-      <AboutSection />
-      <ExperienceSection />
+      <Section {...about} />
     </>
   );
 };

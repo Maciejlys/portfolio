@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  font-weight: bold;
 `;
 
 export const HeroBg = styled.div`

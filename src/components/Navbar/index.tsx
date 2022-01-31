@@ -17,10 +17,8 @@ import {
 export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
   const [scrollingDown, setScrollingDown] = useState(false);
   const [lastPos, setLastPos] = useState(0);
-  const [reactScrollUsed, setReactScrollUsed] = useState(false);
 
   const handleScroll = () => {
-    console.log("b");
     const currPos = window.scrollY;
     const isScrollingUp = currPos < lastPos;
 

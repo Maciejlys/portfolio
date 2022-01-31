@@ -1,0 +1,35 @@
+// export const example = {
+//   id: "about",
+//   lightBg: false,
+//   lightText: true,
+//   topLine: "topLine",
+//   headLine: "Headline",
+//   description: "Description",
+//   buttonLabel: "button",
+//   imgStart: false,
+//   img: "assets/personal.svg",
+//   alt: "",
+//   dark: true,
+//   primary: true,
+//   dartText: false,
+// };
+
+export const about = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  topLine: "",
+  headLine: "About me!",
+  description: [
+    "Hi! My name is Maciej and I enjoy learning react. I started learning it after unsuccessful bit of time with game development, I couldn't bring myself to do much, but after learning about react and spending few days learning it, something clicked and I stucked with that since!",
+    "aasdasdasdsaads",
+    "assadsad",
+  ],
+  buttonLabel: "button",
+  imgStart: false,
+  img: "assets/personal.svg",
+  alt: "",
+  dark: true,
+  primary: true,
+  dartText: false,
+};

@@ -9,6 +9,7 @@ export const Nav = styled(motion.nav)`
   align-items: center;
   font-size: 1rem;
   position: sticky;
+  font-weight: bold;
   top: 0;
   z-index: 10;
   background-color: rgba(10, 25, 47, 1);

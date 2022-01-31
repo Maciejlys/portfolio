@@ -8,8 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   color: #fafafa;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
