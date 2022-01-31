@@ -1,5 +1,6 @@
 import React from "react";
 import { importFromPublic } from "../../utils/publicImportUtil";
+import { FadeInWhenVisible } from "../FramerAnimations/Motions";
 
 import {
   HeroBg,

@@ -11,25 +11,45 @@
 //   alt: "",
 //   dark: true,
 //   primary: true,
-//   dartText: false,
+//   darkText: false,
 // };
 
 export const about = {
   id: "about",
   lightBg: false,
   lightText: true,
-  topLine: "",
-  headLine: "About me!",
+  topLine: "About me",
+  headLine: "",
   description: [
-    "Hi! My name is Maciej and I enjoy learning react. I started learning it after unsuccessful bit of time with game development, I couldn't bring myself to do much, but after learning about react and spending few days learning it, something clicked and I stucked with that since!",
-    "aasdasdasdsaads",
-    "assadsad",
+    "Hi ! My name is Maciej and I enjoy learning react." +
+      "I started learning it after unsuccessful bit of time with game development," +
+      "I couldn't bring myself to do much, but after learning about react and spending" +
+      " few days learning it, something clicked and I stucked with that since!",
+    "Usefull links:",
   ],
-  buttonLabel: "button",
+  buttonLabel: "",
+  buttonWrapper: true,
   imgStart: false,
-  img: "assets/personal.svg",
-  alt: "",
+  img: "assets/svg/personal.svg",
+  alt: "personal-svg",
   dark: true,
   primary: true,
-  dartText: false,
+  darkText: false,
+};
+
+export const experiance = {
+  id: "experiance",
+  lightBg: true,
+  lightText: false,
+  topLine: "",
+  headLine: "About me!",
+  description: ["a"],
+  buttonLabel: "button",
+  imgStart: true,
+  img: "assets/svg/work.svg",
+  alt: "personal-svg",
+  dark: false,
+  primary: true,
+  buttonWrapper: false,
+  darkText: true,
 };

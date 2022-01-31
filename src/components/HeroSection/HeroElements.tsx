@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 700px;
+  height: 94vh;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -46,7 +46,6 @@ export const HeroH1 = styled.h1`
   text-align: center;
   background-color: transparent;
   font-size: 72px;
-  animation: 3s ease-in 0s slideInFromLeft;
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
@@ -60,7 +59,6 @@ export const HeroH2 = styled.h2`
   color: #cacaca;
   background-color: transparent;
   font-size: 72px;
-  animation: 4s ease-out 0s slideInFromRight;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -73,7 +71,6 @@ export const HeroH2 = styled.h2`
 
 export const HeroSpan = styled.span`
   background-color: transparent;
-  animation: 2s ease-in 0s slideInFromRight;
   color: #64ffda;
   font-size: 26px;
   text-align: center;
@@ -94,7 +91,6 @@ export const HeroP = styled.p`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  animation: 5s ease-out 0s slideInFromLeft;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;

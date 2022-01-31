@@ -3,7 +3,7 @@ import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Section";
-import { about } from "../sectionData/sectionData";
+import { about, experiance } from "../sectionData/sectionData";
 export interface NavProps {
   toggleMenu: () => void;
   isOpen?: boolean;
@@ -21,6 +21,7 @@ export const Home = () => {
       <MobileBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <HeroSection />
       <Section {...about} />
+      <Section {...experiance} />
     </>
   );
 };

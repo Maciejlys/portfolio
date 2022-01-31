@@ -9,6 +9,7 @@ import {
 } from "./MobileBarElements";
 import { navigationLinks } from "../../nav-links";
 import { NavProps } from "../../Pages/Home";
+import { OnHoverScaleMotion } from "../FramerAnimations/Motions";
 
 const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
   return (
@@ -20,14 +21,16 @@ const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
         <Wrapper>
           <Menu>
             {navigationLinks.map((link, i) => (
-              <MobileLink
-                key={i}
-                to={link.link}
-                onClick={toggleMenu}
-                smooth={true}
-                duration={500}>
-                {link.title}
-              </MobileLink>
+              <OnHoverScaleMotion>
+                <MobileLink
+                  key={i}
+                  to={link.link}
+                  onClick={toggleMenu}
+                  smooth={true}
+                  duration={500}>
+                  {link.title}
+                </MobileLink>
+              </OnHoverScaleMotion>
             ))}
           </Menu>
         </Wrapper>
