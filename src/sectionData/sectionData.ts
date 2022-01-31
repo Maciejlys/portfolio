@@ -19,13 +19,12 @@ export const about = {
   lightBg: false,
   lightText: true,
   topLine: "About me",
-  headLine: "",
+  headLine: "My name is Maciej and I enjoy learning react.",
   description: [
-    "Hi ! My name is Maciej and I enjoy learning react." +
-      "I started learning it after unsuccessful bit of time with game development," +
+    "I started learning web development after unsuccessful bit of time with game development, " +
       "I couldn't bring myself to do much, but after learning about react and spending" +
       " few days learning it, something clicked and I stucked with that since!",
-    "Usefull links:",
+    "Check out my github and linkedin here:",
   ],
   buttonLabel: "",
   buttonWrapper: true,
@@ -42,8 +41,12 @@ export const experiance = {
   lightBg: true,
   lightText: false,
   topLine: "",
-  headLine: "About me!",
-  description: ["a"],
+  headLine: "My experiance",
+  description: [
+    "I have no prior experiance in comericial projects," +
+      "but what I lack in professional experiance I make up " +
+      "with my enthusiasm and drive to learn.",
+  ],
   buttonLabel: "button",
   imgStart: true,
   img: "assets/svg/work.svg",

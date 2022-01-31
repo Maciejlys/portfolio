@@ -15,7 +15,7 @@ import {
 } from "./NavbarElemets";
 import {
   OnHoverScaleMotion,
-  OnHoverScaleWithTopMotion,
+  OnHoverScaleWithTopMotionClickable,
 } from "../FramerAnimations/Motions";
 
 export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
           </MobileIcon>
           <NavMenu>
             {navigationLinks.map((link, i) => (
-              <OnHoverScaleWithTopMotion>
+              <OnHoverScaleWithTopMotionClickable>
                 <NavItem>
                   <NavLinks
                     key={i}
@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
                     {link.title}
                   </NavLinks>
                 </NavItem>
-              </OnHoverScaleWithTopMotion>
+              </OnHoverScaleWithTopMotionClickable>
             ))}
           </NavMenu>
         </NavContainer>

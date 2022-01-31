@@ -4,6 +4,7 @@ import { importFromPublic } from "../../utils/publicImportUtil";
 import {
   FadeInWhenVisible,
   OnHoverScaleWithTopMotion,
+  OnHoverScaleWithTopMotionClickable,
 } from "../FramerAnimations/Motions";
 import {
   BtnWrapper,
@@ -41,35 +42,43 @@ const Section: React.FC<SectionProps> = ({
           <SectionWrapper>
             <SectionRow imgStart={imgStart}>
               <Column1>
-                <TextWrapper>
-                  <TopLine>{topLine}</TopLine>
-                  <Heading lightText={lightText}>{headLine}</Heading>
-                  {description.map((line) => (
-                    <Subtitle darkText={darkText}>{line}</Subtitle>
-                  ))}
-                  {buttonWrapper && (
-                    <BtnWrapper>
-                      <a href="https://github.com/Maciejlys" target="_blank">
-                        <OnHoverScaleWithTopMotion>
-                          <AiFillGithub size={50} />
-                        </OnHoverScaleWithTopMotion>
-                      </a>
+                <OnHoverScaleWithTopMotion>
+                  <TextWrapper>
+                    <TopLine>{topLine}</TopLine>
+                    <Heading lightText={lightText}>{headLine}</Heading>
+                    {description.map((line) => (
+                      <Subtitle darkText={darkText}>{line}</Subtitle>
+                    ))}
+                    {buttonWrapper && (
+                      <BtnWrapper>
+                        <a
+                          href="https://github.com/Maciejlys"
+                          target="_blank"
+                          rel="noreferrer">
+                          <OnHoverScaleWithTopMotionClickable>
+                            <AiFillGithub size={50} />
+                          </OnHoverScaleWithTopMotionClickable>
+                        </a>
 
-                      <a
-                        href="https://www.linkedin.com/in/maciej-%C5%82yszczarz-258862213/"
-                        target="_blank">
-                        <OnHoverScaleWithTopMotion>
-                          <AiFillLinkedin size={50} />
-                        </OnHoverScaleWithTopMotion>
-                      </a>
-                    </BtnWrapper>
-                  )}
-                </TextWrapper>
+                        <a
+                          href="https://www.linkedin.com/in/maciej-%C5%82yszczarz-258862213/"
+                          target="_blank"
+                          rel="noreferrer">
+                          <OnHoverScaleWithTopMotionClickable>
+                            <AiFillLinkedin size={50} />
+                          </OnHoverScaleWithTopMotionClickable>
+                        </a>
+                      </BtnWrapper>
+                    )}
+                  </TextWrapper>
+                </OnHoverScaleWithTopMotion>
               </Column1>
               <Column2>
-                <ImgWrapper>
-                  <Img src={importFromPublic(img)} alt={alt} />
-                </ImgWrapper>
+                <OnHoverScaleWithTopMotion>
+                  <ImgWrapper>
+                    <Img src={importFromPublic(img)} alt={alt} />
+                  </ImgWrapper>
+                </OnHoverScaleWithTopMotion>
               </Column2>
             </SectionRow>
           </SectionWrapper>

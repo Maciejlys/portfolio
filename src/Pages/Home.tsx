@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Section";
 import { about, experiance } from "../sectionData/sectionData";
+import SkillsSection from "../components/SkillsSection";
+
 export interface NavProps {
   toggleMenu: () => void;
   isOpen?: boolean;
@@ -22,6 +24,7 @@ export const Home = () => {
       <HeroSection />
       <Section {...about} />
       <Section {...experiance} />
+      <SkillsSection />
     </>
   );
 };
