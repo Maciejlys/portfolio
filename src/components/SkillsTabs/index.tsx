@@ -45,7 +45,6 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
           <SkillButtonWrapper>
             {allSkills.map((item, index) => (
               <OnHoverScaleWithTopMotionClickable key={index}>
-                //TODO fix border-top on scale on hover
                 <SkillButton
                   onClick={() => setValue(index)}
                   active={index === value}>
