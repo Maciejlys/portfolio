@@ -1,7 +1,7 @@
 import React from "react";
-import { FadeInWhenVisible } from "../FramerAnimations/Motions";
+import { FadeInWhenVisible } from "../../components/FramerAnimations/Motions";
 import { TopLine } from "../Section/SectionElements";
-import { SklillTabs } from "../SkillsTabs";
+import { SklillTabs } from "../../components/SkillsTabs";
 import {
   SkillSectionBg,
   SkillSectionContainer,

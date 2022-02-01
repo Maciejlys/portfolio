@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { skills } from "../../Data/skillsData";
+import { skills } from "../../data/skillsData";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import {
   Description,
@@ -14,7 +14,7 @@ import {
 } from "./SkillTabsElements";
 import { OnHoverScaleWithTopMotionClickable } from "../FramerAnimations/Motions";
 import { fadeInFromBottom } from "../FramerAnimations/variants";
-import { SkillProps } from "../../Data/skillPropsType";
+import { SkillProps } from "../../data/skillPropsType";
 
 interface SklillTabsProps {}
 

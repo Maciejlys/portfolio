@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { importFromPublic } from "../../utils/publicImportUtil";
-import { OnHoverScaleWithTopMotion } from "../FramerAnimations/Motions";
+import { OnHoverScaleWithTopMotion } from "../../components/FramerAnimations/Motions";
 import {
   HeroBg,
   HeroContainer,

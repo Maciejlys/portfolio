@@ -8,7 +8,7 @@ import {
   MobileLink,
 } from "./MobileBarElements";
 import { navigationLinks } from "../../nav-links";
-import { NavProps } from "../../Pages/Home";
+import { NavProps } from "../../pages/Home";
 import { OnHoverScaleMotion } from "../FramerAnimations/Motions";
 
 const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {

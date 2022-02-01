@@ -5,7 +5,7 @@ import {
   FadeInWhenVisible,
   OnHoverScaleWithTopMotion,
   OnHoverScaleWithTopMotionClickable,
-} from "../FramerAnimations/Motions";
+} from "../../components/FramerAnimations/Motions";
 import {
   BtnWrapper,
   Column1,

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import Section from "../components/Section";
-import { about, experience } from "../Data/sectionData";
-import SkillsSection from "../components/SkillsSection";
+import HeroSection from "../modules/HeroSection";
+import Section from "../modules/Section";
+import { about, experience } from "../data/sectionData";
+import SkillsSection from "../modules/SkillsSection";
 
 export interface NavProps {
   toggleMenu: () => void;

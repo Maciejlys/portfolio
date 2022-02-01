@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { navigationLinks } from "../../nav-links";
-import { NavProps } from "../../Pages/Home";
+import { NavProps } from "../../pages/Home";
 import { importFromPublic } from "../../utils/publicImportUtil";
 import { animateScroll } from "react-scroll";
 import {
