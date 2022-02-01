@@ -8,8 +8,15 @@ export const SectionContainer = styled.div<SectionContainerProps>`
   color: #fff;
   background-color: ${({ lightBg }) => (lightBg ? "#cecece" : "#0a192f")};
   font-weight: bold;
+  height: 100vh;
+  width: 100%;
+
+  @media screen and (max-width: 960px) {
+    padding: 80px 0;
+  }
+
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   a {
@@ -18,14 +25,17 @@ export const SectionContainer = styled.div<SectionContainerProps>`
 `;
 
 export const SectionWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+    width: 100%;
+  }
   display: grid;
   z-index: 1;
-  height: 100vh;
-  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
   justify-content: center;
+  align-items: center;
 `;
 
 interface SectionRowProps {
@@ -131,4 +141,8 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding: 0;
+
+  @media screen and (max-width: 768px) {
+    max-height: 300px;
+  }
 `;

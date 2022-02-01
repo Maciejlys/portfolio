@@ -20,10 +20,9 @@ const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
         </Icon>
         <Wrapper>
           <Menu>
-            {navigationLinks.map((link, i) => (
-              <OnHoverScaleMotion>
+            {navigationLinks.map((link, index) => (
+              <OnHoverScaleMotion key={index}>
                 <MobileLink
-                  key={i}
                   to={link.link}
                   onClick={toggleMenu}
                   smooth={true}

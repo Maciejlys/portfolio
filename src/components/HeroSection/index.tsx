@@ -3,12 +3,6 @@ import React, { useEffect } from "react";
 import { importFromPublic } from "../../utils/publicImportUtil";
 import { OnHoverScaleWithTopMotion } from "../FramerAnimations/Motions";
 import {
-  easing,
-  fadeInUp,
-  animationContainer,
-  fadeInRight,
-} from "../FramerAnimations/variants";
-import {
   HeroBg,
   HeroContainer,
   HeroContent,
@@ -22,11 +16,6 @@ import {
 interface indexProps {}
 
 export const HeroSection: React.FC<indexProps> = () => {
-  const controls = useAnimation();
-  useEffect(() => {
-    controls.start("visible");
-  }, [controls]);
-
   return (
     <HeroContainer>
       <HeroBg>

@@ -12,7 +12,8 @@ export const MobileBarContainer = styled.aside<MobileBarContainerProps>`
   width: 100%;
   height: 100%;
   background-color: rgba(10, 25, 47, 95);
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
@@ -41,14 +42,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Menu = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
-  text-align: center;
-
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
 `;
 
 export const MobileLink = styled(Link)`

@@ -3,7 +3,7 @@ import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Section from "../components/Section";
-import { about, experience } from "../Data/sectionData/sectionData";
+import { about, experience } from "../Data/sectionData";
 import SkillsSection from "../components/SkillsSection";
 
 export interface NavProps {

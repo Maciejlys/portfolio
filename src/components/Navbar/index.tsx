@@ -60,11 +60,10 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
             </OnHoverScaleMotion>
           </MobileIcon>
           <NavMenu>
-            {navigationLinks.map((link, i) => (
-              <OnHoverScaleWithTopMotionClickable>
+            {navigationLinks.map((link, index) => (
+              <OnHoverScaleWithTopMotionClickable key={index}>
                 <NavItem>
                   <NavLinks
-                    key={i}
                     to={link.link}
                     smooth={true}
                     spy={true}

@@ -1,49 +1,27 @@
 import React from "react";
-import { importFromPublic } from "../../utils/publicImportUtil";
-import {
-  FadeInWhenVisible,
-  OnHoverScaleWithTopMotion,
-} from "../FramerAnimations/Motions";
-import { Img, ImgWrapper } from "../Section/SectionElements";
+import { FadeInWhenVisible } from "../FramerAnimations/Motions";
+import { TopLine } from "../Section/SectionElements";
 import { SklillTabs } from "../SkillsTabs";
 import {
-  SkillColumn1,
-  SkillColumn2,
-  SkillHeading,
+  SkillSectionBg,
   SkillSectionContainer,
-  SkillSectionRow,
-  SkillSectionWrapper,
-  SkillSubtitle,
-  SkillTextWrapper,
-  SkillTopLine,
+  SkillsSectionH2,
+  SkillsSectionTitle,
 } from "./SkillsElements";
 
 const SkillsSection: React.FC = () => {
   return (
     <>
-      <SkillSectionContainer id={"skills"}>
+      <SkillSectionBg id={"skills"}>
         <FadeInWhenVisible>
-          <SkillSectionWrapper>
-            <SkillSectionRow>
-              <SkillColumn1>
-                <OnHoverScaleWithTopMotion>
-                  <SklillTabs />
-                </OnHoverScaleWithTopMotion>
-              </SkillColumn1>
-              <SkillColumn2>
-                <OnHoverScaleWithTopMotion>
-                  <ImgWrapper>
-                    <Img
-                      src={importFromPublic("assets/svg/skills.svg")}
-                      alt="skills"
-                    />
-                  </ImgWrapper>
-                </OnHoverScaleWithTopMotion>
-              </SkillColumn2>
-            </SkillSectionRow>
-          </SkillSectionWrapper>
+          <SkillSectionContainer>
+            <SkillsSectionTitle>
+              <TopLine>My skills</TopLine>
+            </SkillsSectionTitle>
+            <SklillTabs />
+          </SkillSectionContainer>
         </FadeInWhenVisible>
-      </SkillSectionContainer>
+      </SkillSectionBg>
     </>
   );
 };

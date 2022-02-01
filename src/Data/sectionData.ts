@@ -19,7 +19,7 @@ export const about = {
   lightBg: false,
   lightText: true,
   topLine: "About me",
-  headLine: "My name is Maciej and I enjoy learning react.",
+  headLine: "",
   description: [
     "I started learning web development after unsuccessful bit of time with game development, " +
       "I couldn't bring myself to do much, but after learning about react and spending" +
@@ -46,8 +46,8 @@ export const experience = {
     "I have no prior experience in comericial projects, " +
       "but what I lack in professional experience I make up " +
       "with my enthusiasm and drive to learn.",
-    "Right now I am focusing on learning frontend development as much as I can in " +
-      "my free time",
+    "Right now I am focusing on learning frontend development in " +
+      " my free time  as much as I can.",
   ],
   buttonLabel: "button",
   imgStart: true,
