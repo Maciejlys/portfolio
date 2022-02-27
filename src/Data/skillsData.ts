@@ -16,11 +16,8 @@ export const skills: SkillProps[] = [
     title: "React",
     description: [
       "I've been learning react for a few months now, I started out very slowly but ramped up as the time went by.",
-      "I watched whole John's Smilga course on react while I was traveling",
-      "description2",
-      "description2",
-      "description2",
-      "description2",
+      "I watched whole John's Smilga course on react while I was commuting to university. Then when I was back home I tried my skills and  I was building more and more satisfying stuff.",
+      "I fell in love with React, and I love it since, because of it got quickly to me, and I think that its simplicity and readibility helps there.",
       "I am new to web development but I am trying my best at everything I do.",
     ],
   },
@@ -29,7 +26,8 @@ export const skills: SkillProps[] = [
     title: "Styled-components",
     description: [
       "I've fallen in love with style-components on first sight.",
-      "I really love the concept of it yet I don't fully grasp it at the moment but I am working on it!",
+      "I really like to write my css inside my code as it helps with small components, I can just style it in one place so its comfortable and split the code later if its necessary.",
+      "First thing that got my attention was being able to pass props inside styles, and that made it easier for me to style different states and behaviors.",
     ],
   },
   {
