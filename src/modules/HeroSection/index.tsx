@@ -1,17 +1,9 @@
-import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import { importFromPublic } from "../../utils/publicImportUtil";
-import { OnHoverScaleWithTopMotion } from "../../components/FramerAnimations/Motions";
-import {
-  HeroBg,
-  HeroContainer,
-  HeroContent,
-  HeroH1,
-  HeroH2,
-  HeroP,
-  HeroSpan,
-  VideoBg,
-} from "./HeroElements";
+import { OnHoverZoom } from "../../components/FramerAnimations/Motions";
+import { HeroBg, HeroContainer, HeroContent } from "./HeroElements";
+import Particles from "react-tsparticles";
 
 interface indexProps {}
 
@@ -19,48 +11,80 @@ export const HeroSection: React.FC<indexProps> = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg
-          autoPlay
-          loop
-          muted
-          src={importFromPublic("assets/video.mp4")}
+        <Particles
+          height="900px"
+          options={{
+            fullScreen: { enable: false },
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                bubble: {
+                  distance: 400,
+                  duration: 2,
+                  opacity: 1,
+                  size: 40,
+                },
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 1,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#ffffff",
+              },
+              links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+              },
+              collisions: {
+                enable: false,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 4,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
+            },
+            detectRetina: true,
+          }}
         />
       </HeroBg>
-
-      <HeroContent>
-        <OnHoverScaleWithTopMotion>
-          <motion.div
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -100 }}
-            transition={{ duration: 2 }}>
-            <HeroSpan>Hi, my name is</HeroSpan>
-          </motion.div>
-        </OnHoverScaleWithTopMotion>
-        <OnHoverScaleWithTopMotion>
-          <motion.div
-            animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 2.5 }}>
-            <HeroH1>Maciej Łyszczarz.</HeroH1>
-          </motion.div>
-        </OnHoverScaleWithTopMotion>
-        <OnHoverScaleWithTopMotion>
-          <motion.div
-            animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 3 }}>
-            <HeroH2>I build things for the web.</HeroH2>
-          </motion.div>
-        </OnHoverScaleWithTopMotion>
-        <OnHoverScaleWithTopMotion>
-          <motion.div
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 3.5 }}>
-            <HeroP>I'm a student that learns how to build websites.</HeroP>
-          </motion.div>
-        </OnHoverScaleWithTopMotion>
-      </HeroContent>
+      <HeroContent></HeroContent>
     </HeroContainer>
   );
 };

@@ -49,7 +49,11 @@ interface SkillButtonProps {
 }
 
 export const SkillButton = styled(motion.div)<SkillButtonProps>`
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 4rem;
   cursor: pointer;
   border-left: ${({ active }) =>
     active ? "2px solid #64ffda" : "2px solid transparent"};
@@ -57,6 +61,7 @@ export const SkillButton = styled(motion.div)<SkillButtonProps>`
   @media (max-width: 960px) {
     flex-direction: row;
     border-left: none;
+    padding: 20px 0;
     border-top: ${({ active }) =>
       active ? "2px solid #64ffda" : "2px solid transparent"};
   }
@@ -65,15 +70,13 @@ export const SkillInfo = styled(motion.div)`
   padding: 1rem;
   height: 50vh;
   width: 80%;
-  word-break: break-all;
+  word-break: break-word;
 
   @media (max-width: 960px) {
     width: 100%;
   }
 `;
 
-export const SkillH3 = styled(motion.h3)``;
-export const SkillP = styled(motion.div)``;
 export const Description = styled.div`
   display: flex;
   align-items: center;
@@ -86,4 +89,20 @@ export const RightArrowIcon = styled(FaAngleDoubleRight)`
   min-width: 15px;
   display: flex;
   align-self: flex-start;
+`;
+
+export const SkillTextButton = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 960px) {
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: auto;
+    height: 3rem;
+  }
 `;

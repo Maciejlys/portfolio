@@ -6,3 +6,11 @@ export const fadeInFromBottom = {
     transition: { duration: 0.5 },
   },
 };
+
+export const woobleVariant = {
+  visible: { y: 0, scaleY: 1 },
+  hover: {
+    scaleY: [1, 1.3, 0.8, 1, 1],
+    color: "red",
+  },
+};

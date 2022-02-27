@@ -20,14 +20,8 @@ export const HeroBg = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: red;
   overflow: hidden;
-`;
-
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 `;
 
 export const HeroContent = styled.div`
@@ -38,7 +32,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  background-color: rgba(10, 25, 47, 0.99);
+  background-color: rgba(10, 25, 47, 1);
 `;
 
 export const HeroH1 = styled.h1`

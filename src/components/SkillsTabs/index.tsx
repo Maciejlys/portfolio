@@ -7,12 +7,11 @@ import {
   SkillButton,
   SkillButtonWrapper,
   SkillContainer,
-  SkillH3,
   SkillInfo,
-  SkillP,
+  SkillTextButton,
   SkillWrapper,
 } from "./SkillTabsElements";
-import { OnHoverScaleWithTopMotionClickable } from "../FramerAnimations/Motions";
+import { OnHoverZoomClickable } from "../FramerAnimations/Motions";
 import { fadeInFromBottom } from "../FramerAnimations/variants";
 import { SkillProps } from "../../data/skillPropsType";
 
@@ -44,26 +43,32 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
         <SkillWrapper>
           <SkillButtonWrapper>
             {allSkills.map((item, index) => (
-              <OnHoverScaleWithTopMotionClickable key={index}>
-                <SkillButton
-                  onClick={() => setValue(index)}
-                  active={index === value}>
+              <SkillButton
+                onClick={() => setValue(index)}
+                active={index === value}
+                key={index}>
+                <SkillTextButton
+                  whileHover={{
+                    scale: 1.1,
+                    y: -5,
+                  }}
+                  whileTap={{ scale: 0.9, y: 5 }}>
                   {item.title}
-                </SkillButton>
-              </OnHoverScaleWithTopMotionClickable>
+                </SkillTextButton>
+              </SkillButton>
             ))}
           </SkillButtonWrapper>
           <SkillInfo
             variants={fadeInFromBottom}
             initial="initial"
             animate={anim ? "animate" : "initial"}>
-            <SkillH3>{title}</SkillH3>
+            <h3>{title}</h3>
             {description.map((line, index) => (
               <Description key={index}>
                 <RightArrowIcon />
-                <SkillP>
+                <p>
                   <p>{line}</p>
-                </SkillP>
+                </p>
               </Description>
             ))}
           </SkillInfo>

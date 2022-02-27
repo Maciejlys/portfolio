@@ -17,15 +17,7 @@ export const FadeInWhenVisible: React.FC = ({ children }) => {
   );
 };
 
-export const OnHoverScaleMotion: React.FC = ({ children }) => {
-  return (
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-      {children}
-    </motion.div>
-  );
-};
-
-export const OnHoverScaleWithTopMotion: React.FC = ({ children }) => {
+export const OnHoverZoom: React.FC = ({ children }) => {
   return (
     <motion.div
       whileHover={{
@@ -37,7 +29,7 @@ export const OnHoverScaleWithTopMotion: React.FC = ({ children }) => {
   );
 };
 
-export const OnHoverScaleWithTopMotionClickable: React.FC = ({ children }) => {
+export const OnHoverZoomClickable: React.FC = ({ children }) => {
   return (
     <motion.div
       whileHover={{

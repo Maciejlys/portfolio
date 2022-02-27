@@ -13,10 +13,7 @@ import {
   NavLogo,
   NavMenu,
 } from "./NavbarElemets";
-import {
-  OnHoverScaleMotion,
-  OnHoverScaleWithTopMotionClickable,
-} from "../FramerAnimations/Motions";
+import { OnHoverZoomClickable } from "../FramerAnimations/Motions";
 
 export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
   const [scrollingDown, setScrollingDown] = useState(false);
@@ -55,13 +52,13 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
             src={importFromPublic("assets/png/logo.png")}
           />
           <MobileIcon onClick={toggleMenu}>
-            <OnHoverScaleMotion>
+            <a>
               <FaBars />
-            </OnHoverScaleMotion>
+            </a>
           </MobileIcon>
           <NavMenu>
             {navigationLinks.map((link, index) => (
-              <OnHoverScaleWithTopMotionClickable key={index}>
+              <OnHoverZoomClickable key={index}>
                 <NavItem>
                   <NavLinks
                     to={link.link}
@@ -71,7 +68,7 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
                     {link.title}
                   </NavLinks>
                 </NavItem>
-              </OnHoverScaleWithTopMotionClickable>
+              </OnHoverZoomClickable>
             ))}
           </NavMenu>
         </NavContainer>

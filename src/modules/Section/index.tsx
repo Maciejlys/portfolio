@@ -3,8 +3,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { importFromPublic } from "../../utils/publicImportUtil";
 import {
   FadeInWhenVisible,
-  OnHoverScaleWithTopMotion,
-  OnHoverScaleWithTopMotionClickable,
+  OnHoverZoom,
+  OnHoverZoomClickable,
 } from "../../components/FramerAnimations/Motions";
 import {
   BtnWrapper,
@@ -41,7 +41,7 @@ const Section: React.FC<SectionProps> = ({
         <SectionWrapper>
           <SectionRow imgStart={imgStart}>
             <Column1>
-              <OnHoverScaleWithTopMotion>
+              <OnHoverZoom>
                 <TextWrapper>
                   <TopLine>{topLine}</TopLine>
                   <Heading lightText={lightText}>{headLine}</Heading>
@@ -56,30 +56,30 @@ const Section: React.FC<SectionProps> = ({
                         href="https://github.com/Maciejlys"
                         target="_blank"
                         rel="noreferrer">
-                        <OnHoverScaleWithTopMotionClickable>
+                        <OnHoverZoomClickable>
                           <AiFillGithub size={50} />
-                        </OnHoverScaleWithTopMotionClickable>
+                        </OnHoverZoomClickable>
                       </a>
 
                       <a
                         href="https://www.linkedin.com/in/maciej-%C5%82yszczarz-258862213/"
                         target="_blank"
                         rel="noreferrer">
-                        <OnHoverScaleWithTopMotionClickable>
+                        <OnHoverZoomClickable>
                           <AiFillLinkedin size={50} />
-                        </OnHoverScaleWithTopMotionClickable>
+                        </OnHoverZoomClickable>
                       </a>
                     </BtnWrapper>
                   )}
                 </TextWrapper>
-              </OnHoverScaleWithTopMotion>
+              </OnHoverZoom>
             </Column1>
             <Column2>
-              <OnHoverScaleWithTopMotion>
+              <OnHoverZoom>
                 <ImgWrapper>
                   <Img src={importFromPublic(img)} alt={alt} />
                 </ImgWrapper>
-              </OnHoverScaleWithTopMotion>
+              </OnHoverZoom>
             </Column2>
           </SectionRow>
         </SectionWrapper>
