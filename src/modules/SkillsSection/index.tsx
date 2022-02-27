@@ -7,6 +7,7 @@ import {
   SkillSectionContainer,
   SkillsSectionH2,
   SkillsSectionTitle,
+  Title,
 } from "./SkillsElements";
 
 const SkillsSection: React.FC = () => {
@@ -16,7 +17,7 @@ const SkillsSection: React.FC = () => {
         <FadeInWhenVisible>
           <SkillSectionContainer>
             <SkillsSectionTitle>
-              <TopLine>My skills</TopLine>
+              <Title>My skills</Title>
             </SkillsSectionTitle>
             <SklillTabs />
           </SkillSectionContainer>

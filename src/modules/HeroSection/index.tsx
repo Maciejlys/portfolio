@@ -1,90 +1,72 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { importFromPublic } from "../../utils/publicImportUtil";
-import { OnHoverZoom } from "../../components/FramerAnimations/Motions";
-import { HeroBg, HeroContainer, HeroContent } from "./HeroElements";
-import Particles from "react-tsparticles";
+import {
+  AnimateIconDown,
+  HeroBg,
+  HeroContainer,
+  HeroContent,
+  HeroIcon,
+  HeroIconContainer,
+  HeroLetter,
+  HeroLine,
+  MainContent,
+} from "./HeroElements";
+import { HeroParticles } from "../../components/HeroParticles";
+import {
+  container,
+  heroArrow,
+  listItem,
+} from "../../components/FramerAnimations/variants";
+import { Link } from "react-scroll";
 
-interface indexProps {}
+const lines = [
+  "Hi,",
+  "My name is Maciej.",
+  "I am learning how,",
+  "to build web apps.",
+];
 
-export const HeroSection: React.FC<indexProps> = () => {
+export const HeroSection: React.FC = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <Particles
-          height="900px"
-          options={{
-            fullScreen: { enable: false },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                bubble: {
-                  distance: 400,
-                  duration: 2,
-                  opacity: 1,
-                  size: 40,
-                },
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 1,
-                },
-              },
-            },
-            particles: {
-              color: {
-                value: "#ffffff",
-              },
-              links: {
-                color: "#ffffff",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              collisions: {
-                enable: false,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outMode: "bounce",
-                random: false,
-                speed: 4,
-                straight: false,
-              },
-              number: {
-                density: {
-                  enable: true,
-                  area: 800,
-                },
-                value: 80,
-              },
-              opacity: {
-                value: 0.5,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                random: true,
-                value: 5,
-              },
-            },
-            detectRetina: true,
-          }}
-        />
+        <HeroParticles />
       </HeroBg>
-      <HeroContent></HeroContent>
+      <HeroContent variants={container} initial="hidden" animate="show">
+        <MainContent>
+          {lines.map((line, index) => (
+            <HeroLine key={index}>
+              {line.split(" ").map((word, index) => (
+                <>
+                  {word.split("").map((letter) => (
+                    <HeroLetter
+                      variants={listItem}
+                      whileHover={{
+                        scale: [1, 1.2, 1.1, 1.2],
+                        rotate: [0, 5, -5, 0],
+                        color: ["#fff", "#64ffda"],
+                        transition: {
+                          duration: 0.2,
+                        },
+                      }}>
+                      {letter}
+                    </HeroLetter>
+                  ))}
+                  &nbsp;
+                </>
+              ))}
+            </HeroLine>
+          ))}
+        </MainContent>
+        <HeroIconContainer variants={heroArrow}>
+          <Link to="about" smooth={true} spy={true} duration={500}>
+            <AnimateIconDown
+              animate={{ y: [0, 30, 0] }}
+              transition={{ repeat: Infinity, delay: 8 }}>
+              <HeroIcon />
+            </AnimateIconDown>
+          </Link>
+        </HeroIconContainer>
+      </HeroContent>
     </HeroContainer>
   );
 };

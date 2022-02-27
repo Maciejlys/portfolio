@@ -10,8 +10,8 @@ import {
   SkillInfo,
   SkillTextButton,
   SkillWrapper,
+  TitleH3,
 } from "./SkillTabsElements";
-import { OnHoverZoomClickable } from "../FramerAnimations/Motions";
 import { fadeInFromBottom } from "../FramerAnimations/variants";
 import { SkillProps } from "../../data/skillPropsType";
 
@@ -62,10 +62,10 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
             variants={fadeInFromBottom}
             initial="initial"
             animate={anim ? "animate" : "initial"}>
-            <h3>{title}</h3>
+            <TitleH3>{title}</TitleH3>
             {description.map((line, index) => (
               <Description key={index}>
-                <RightArrowIcon />
+                <RightArrowIcon fill="black" />
                 <p>
                   <p>{line}</p>
                 </p>

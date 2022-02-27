@@ -14,3 +14,23 @@ export const woobleVariant = {
     color: "red",
   },
 };
+
+export const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const listItem = {
+  hidden: { opacity: 0, y: -20, scaleY: 0 },
+  show: { opacity: 1, y: 0, scaleY: 1 },
+};
+
+export const heroArrow = {
+  hidden: { opacity: 0, y: 50 },
+  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+};

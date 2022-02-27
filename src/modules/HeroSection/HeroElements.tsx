@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
@@ -5,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 94vh;
+  height: 95vh;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
@@ -20,77 +22,59 @@ export const HeroBg = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: rgba(10, 25, 47, 1);
   overflow: hidden;
 `;
 
-export const HeroContent = styled.div`
+export const HeroContent = styled(motion.div)`
   z-index: 3;
   max-width: 1200px;
-  padding: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  background-color: rgba(10, 25, 47, 1);
 `;
 
-export const HeroH1 = styled.h1`
-  color: white;
-  text-align: center;
-  background-color: transparent;
-  font-size: 72px;
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+export const HeroLine = styled(motion.div)`
+  display: flex;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  font-size: 70px;
+  background-color: rgba(10, 25, 47, 0.8);
+
+  @media screen and (max-width: 960px) {
+    font-size: 56px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     font-size: 26px;
   }
 `;
 
-export const HeroH2 = styled.h2`
-  color: #cacaca;
-  background-color: transparent;
-  font-size: 72px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 20px;
-  }
+export const HeroIconContainer = styled(motion.div)`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 125px;
+  left: 0;
+  right: 0;
 `;
 
-export const HeroSpan = styled.span`
-  background-color: transparent;
-  color: #64ffda;
-  font-size: 26px;
-  text-align: center;
-  max-width: 600px;
+export const HeroLetter = styled(motion.div)``;
 
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
-  }
+export const MainContent = styled(motion.div)`
+  margin-bottom: 10rem;
 `;
 
-export const HeroP = styled.p`
-  background-color: transparent;
-  color: #cacaca;
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
+export const AnimateIconDown = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+`;
 
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
+export const HeroIcon = styled(BsFillArrowDownCircleFill)`
+  font-size: 6rem;
 
-  @media screen and (max-width: 480px) {
-    font-size: 9px;
+  &:hover {
+    fill: #64ffda;
   }
 `;

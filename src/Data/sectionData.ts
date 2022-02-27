@@ -13,8 +13,7 @@
 //   primary: true,
 //   darkText: false,
 // };
-
-export const about = {
+export const abouta = {
   id: "about",
   lightBg: false,
   lightText: true,
@@ -36,12 +35,34 @@ export const about = {
   darkText: false,
 };
 
-export const experience = {
-  id: "experience",
+export const about = {
+  id: "about",
   lightBg: true,
   lightText: false,
   topLine: "",
-  headLine: "My experience",
+  headLine: "About me",
+  description: [
+    "I started learning web development after unsuccessful bit of time with game development, " +
+      "I couldn't bring myself to do much, but after learning about react and spending" +
+      " few days learning it, something clicked and I stucked with that since!",
+    "Check out my github and linkedin here:",
+  ],
+  buttonLabel: "",
+  buttonWrapper: true,
+  imgStart: false,
+  img: "assets/svg/personal.svg",
+  alt: "personal-svg",
+  dark: false,
+  primary: true,
+  darkText: true,
+};
+
+export const experience = {
+  id: "experience",
+  lightBg: false,
+  lightText: true,
+  topLine: "My experience",
+  headLine: "",
   description: [
     "I have no prior experience in comericial projects, " +
       "but what I lack in professional experience I make up " +
@@ -53,8 +74,8 @@ export const experience = {
   imgStart: true,
   img: "assets/svg/work.svg",
   alt: "personal-svg",
-  dark: false,
+  dark: true,
   primary: true,
   buttonWrapper: false,
-  darkText: true,
+  darkText: false,
 };

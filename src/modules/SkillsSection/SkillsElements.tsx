@@ -2,15 +2,20 @@ import styled from "styled-components";
 
 export const SkillSectionBg = styled.div`
   height: 100vh;
-  background-color: #0a192f;
+  background-color: #cecece;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
 `;
 
+export const Title = styled.h1`
+  color: black;
+  font-weight: 600;
+`;
+
 export const SkillSectionContainer = styled.div`
-  color: #fff;
+  color: #000;
   font-weight: bold;
   height: 100%;
   max-width: 1100px;
