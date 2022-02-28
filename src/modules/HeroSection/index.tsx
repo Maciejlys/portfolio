@@ -35,8 +35,8 @@ export const HeroSection: React.FC = () => {
         <MainContent>
           {lines.map((line, index) => (
             <HeroLine key={index}>
-              {line.split(" ").map((word, index) => (
-                <div key={index}>
+              {line.split(" ").map((word) => (
+                <>
                   {word.split("").map((letter, index) => (
                     <HeroLetter
                       key={index}
@@ -53,7 +53,7 @@ export const HeroSection: React.FC = () => {
                     </HeroLetter>
                   ))}
                   &nbsp;
-                </div>
+                </>
               ))}
             </HeroLine>
           ))}

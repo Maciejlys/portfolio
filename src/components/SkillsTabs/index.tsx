@@ -65,9 +65,7 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
             {description.map((line, index) => (
               <Description key={index}>
                 <RightArrowIcon fill="black" />
-                <p>
-                  <p>{line}</p>
-                </p>
+                <p>{line}</p>
               </Description>
             ))}
           </SkillInfo>

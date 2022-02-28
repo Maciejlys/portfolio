@@ -1,6 +1,5 @@
 import React from "react";
 import { FadeInWhenVisible } from "../../components/FramerAnimations/Motions";
-import { TopLine } from "../Section/SectionElements";
 import { SklillTabs } from "../../components/SkillsTabs";
 import {
   SkillSectionBg,

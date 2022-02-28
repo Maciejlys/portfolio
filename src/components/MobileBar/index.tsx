@@ -20,15 +20,14 @@ const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
         <Wrapper>
           <Menu>
             {navigationLinks.map((link, index) => (
-              <a key={index}>
-                <MobileLink
-                  to={link.link}
-                  onClick={toggleMenu}
-                  smooth={true}
-                  duration={500}>
-                  {link.title}
-                </MobileLink>
-              </a>
+              <MobileLink
+                key={index}
+                to={link.link}
+                onClick={toggleMenu}
+                smooth={true}
+                duration={500}>
+                {link.title}
+              </MobileLink>
             ))}
           </Menu>
         </Wrapper>
