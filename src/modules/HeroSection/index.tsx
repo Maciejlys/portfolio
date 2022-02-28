@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AnimateIconDown,
   HeroBg,
@@ -26,12 +26,17 @@ const lines = [
 ];
 
 export const HeroSection: React.FC = () => {
+  const [animate, setAnimate] = useState("");
+
+  useEffect(() => {
+    setAnimate("show");
+  }, []);
   return (
     <HeroContainer>
       <HeroBg>
         <HeroParticles />
       </HeroBg>
-      <HeroContent variants={container} initial="hidden" animate="show">
+      <HeroContent variants={container} initial="hidden" animate={animate}>
         <MainContent>
           {lines.map((line, index) => (
             <HeroLine key={index}>
