@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# About the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Working demo](https://maciejlys.github.io/portfolio/)
 
-## Available Scripts
+My personal website where I can showcase my abilities and some of my work.
 
-In the project directory, you can run:
+# To-do
 
-### `npm start`
+- [ ] Change skills section.
+- [ ] Add staggerChildren on some sections.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What was used in this project?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- create-react-app
+- styled-components
+- react-icons
+- react-scroll
+- framer-motion
+- react-intersection-observer
+- react-tsparticles
 
-### `npm test`
+This was also my first time using framer motion after i discovered it\
+and it was awesome experiance! Although it wasn't working as I expected\
+at the beginning but I came through. I had a lot of fun making reveal\
+animations and hover animations!
+I was struggeling with hero section, but after I found particle.js I knew\
+that I want to include it in my project.
+I also found react-fullpage so I am sure that I will use it in one of my next projects\
+as I found it a bit to late going into this one.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# What would I change?
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I think I learned alot while doing this projcet, and thats why \
+if I had to redo it I would definitely make sure to reuse more components\
+I would also make sure that animations are done correctly since the beginning\
+as it would ease up the process. Also I would use more of my time to create\
+better reusable section.
