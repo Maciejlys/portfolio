@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { navigationLinks } from "../../nav-links";
 import { NavProps } from "../../pages/Home";
-import { importFromPublic } from "../../utils/publicImportUtil";
 import { animateScroll } from "react-scroll";
 import {
   MobileIcon,
@@ -49,7 +48,7 @@ export const Navbar: React.FC<NavProps> = ({ toggleMenu }) => {
         <NavContainer>
           <NavLogo
             onClick={toggleHome}
-            src={importFromPublic("assets/png/logo.png")}
+            src={require("../../assets/png/logo.png")}
           />
           <MobileIcon onClick={toggleMenu}>
             <a>

@@ -13,27 +13,6 @@
 //   primary: true,
 //   darkText: false,
 // };
-export const abouta = {
-  id: "about",
-  lightBg: false,
-  lightText: true,
-  topLine: "About me",
-  headLine: "",
-  description: [
-    "I started learning web development after unsuccessful bit of time with game development, " +
-      "I couldn't bring myself to do much, but after learning about react and spending" +
-      " few days learning it, something clicked and I stucked with that since!",
-    "Check out my github and linkedin here:",
-  ],
-  buttonLabel: "",
-  buttonWrapper: true,
-  imgStart: false,
-  img: "assets/svg/personal.svg",
-  alt: "personal-svg",
-  dark: true,
-  primary: true,
-  darkText: false,
-};
 
 export const about = {
   id: "about",
@@ -50,7 +29,7 @@ export const about = {
   buttonLabel: "",
   buttonWrapper: true,
   imgStart: false,
-  img: "assets/svg/personal.svg",
+  img: "Personal",
   alt: "personal-svg",
   dark: false,
   primary: true,
@@ -72,8 +51,8 @@ export const experience = {
   ],
   buttonLabel: "button",
   imgStart: true,
-  img: "assets/svg/work.svg",
-  alt: "personal-svg",
+  img: "Work",
+  alt: "work-svg",
   dark: true,
   primary: true,
   buttonWrapper: false,

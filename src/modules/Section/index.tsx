@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { importFromPublic } from "../../utils/publicImportUtil";
 import {
   FadeInWhenVisible,
   OnHoverZoom,
@@ -21,6 +20,8 @@ import {
   TopLine,
 } from "./SectionElements";
 import SectionProps from "./sectionInterface";
+import Personal from "../../assets/svg/personal.svg";
+import Work from "../../assets/svg/work.svg";
 
 const Section: React.FC<SectionProps> = ({
   id,
@@ -35,6 +36,12 @@ const Section: React.FC<SectionProps> = ({
   buttonWrapper,
   darkText,
 }) => {
+  const [svg, setSvg] = useState(Personal);
+
+  useEffect(() => {
+    if (img == "Work") setSvg(Work);
+  }, []);
+
   return (
     <SectionContainer id={id} lightBg={lightBg}>
       <FadeInWhenVisible>
@@ -77,7 +84,7 @@ const Section: React.FC<SectionProps> = ({
             <Column2>
               <OnHoverZoom>
                 <ImgWrapper>
-                  <Img src={importFromPublic(img)} alt={alt} />
+                  <Img src={svg} alt={alt} />
                 </ImgWrapper>
               </OnHoverZoom>
             </Column2>
