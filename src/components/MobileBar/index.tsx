@@ -7,7 +7,7 @@ import {
   Wrapper,
   MobileLink,
 } from "./MobileBarElements";
-import { navigationLinks } from "../../nav-links";
+import { navigationLinks } from "../../constants/nav-links";
 import { NavProps } from "../../pages/Home";
 
 const MobileBar: React.FC<NavProps> = ({ toggleMenu, isOpen }) => {
