@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { projects } from "../../data/projectsData";
-import { projectContainer, projectItem } from "../FramerAnimations/variants";
-import { ProjectCard } from "../ProjectCard";
+import {
+  projectContainer,
+  projectItem,
+} from "../../components/FramerAnimations/variants";
+import { ProjectCard } from "../../components/ProjectCard";
 import {
   ProjectsContainer,
   ProjectSectionsContainer,

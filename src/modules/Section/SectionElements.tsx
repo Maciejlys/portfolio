@@ -8,7 +8,7 @@ export const SectionContainer = styled.div<SectionContainerProps>`
   color: #fff;
   background-color: ${({ lightBg }) => (lightBg ? "#cecece" : "#0a192f")};
   font-weight: bold;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 
   @media screen and (max-width: 960px) {

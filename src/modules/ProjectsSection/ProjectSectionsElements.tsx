@@ -24,7 +24,6 @@ export const ProjectsContainer = styled(motion.div)`
 export const SectionTitle = styled.div`
   color: #64ffda;
   font-size: 26px;
-  line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
