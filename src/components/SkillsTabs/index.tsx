@@ -64,7 +64,7 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
             <TitleH3>{title}</TitleH3>
             {description.map((line, index) => (
               <Description key={index}>
-                <RightArrowIcon fill="black" />
+                <RightArrowIcon />
                 <p>{line}</p>
               </Description>
             ))}

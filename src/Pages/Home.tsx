@@ -24,8 +24,8 @@ export const Home = () => {
       <MobileBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <HeroSection />
       <Section {...about} />
-      <Section {...experience} />
       <SkillsSection />
+      <Section {...experience} />
       <ProjectsSection />
     </>
   );

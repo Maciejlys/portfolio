@@ -13,7 +13,6 @@ export const SkillContainer = styled.div`
     line-height: 1rem;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    color: black;
   }
 `;
 
@@ -30,12 +29,12 @@ export const SkillButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-right: 1px solid black;
+  border-right: 2px solid white;
   text-align: center;
 
   @media (max-width: 960px) {
     flex-direction: row;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     border-right: none;
     min-width: 300px;
     align-items: flex-end;
@@ -93,9 +92,7 @@ export const RightArrowIcon = styled(FaAngleDoubleRight)`
   align-self: flex-start;
 `;
 
-export const TitleH3 = styled.h3`
-  color: black;
-`;
+export const TitleH3 = styled.h3``;
 
 export const SkillTextButton = styled(motion.div)`
   display: flex;
@@ -104,7 +101,6 @@ export const SkillTextButton = styled(motion.div)`
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  color: black;
   font-weight: 800;
   @media (max-width: 960px) {
     justify-content: center;
