@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillGithub, AiOutlineFolder, AiOutlineLink } from "react-icons/ai";
-import { projectsType } from "../../data/projectsData";
+import { projectsType } from "../../sections-data/projectsData";
 import {
   CardWrapper,
   ProjectDescription,

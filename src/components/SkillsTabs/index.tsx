@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { skills } from "../../data/skillsData";
+import { skills } from "../../sections-data/skillsData";
 import {
   Description,
   RightArrowIcon,
@@ -12,7 +12,7 @@ import {
   TitleH3,
 } from "./SkillTabsElements";
 import { fadeInFromBottom } from "../FramerAnimations/variants";
-import { SkillProps } from "../../data/skillPropsType";
+import { SkillProps } from "../../sections-data/skillPropsType";
 
 interface SklillTabsProps {}
 

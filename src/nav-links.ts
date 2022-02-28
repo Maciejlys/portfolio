@@ -3,7 +3,7 @@ export interface NavLinkType {
   link: string;
 }
 
-export const navigationLinks = [
+export const navigationLinks: NavLinkType[] = [
   {
     title: "About",
     link: "about",

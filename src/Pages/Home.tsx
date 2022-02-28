@@ -3,7 +3,7 @@ import MobileBar from "../components/MobileBar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../modules/HeroSection";
 import Section from "../modules/Section";
-import { about, experience } from "../data/sectionData";
+import { about, experience } from "../sections-data/sectionData";
 import SkillsSection from "../modules/SkillsSection";
 import { ProjectsSection } from "../modules/ProjectsSection";
 

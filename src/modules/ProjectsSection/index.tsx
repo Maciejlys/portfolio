@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { projects } from "../../data/projectsData";
+import { projects } from "../../sections-data/projectsData";
 import {
   projectContainer,
   projectItem,
