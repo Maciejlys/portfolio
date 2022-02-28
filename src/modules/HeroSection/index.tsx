@@ -36,9 +36,10 @@ export const HeroSection: React.FC = () => {
           {lines.map((line, index) => (
             <HeroLine key={index}>
               {line.split(" ").map((word, index) => (
-                <>
-                  {word.split("").map((letter) => (
+                <div key={index}>
+                  {word.split("").map((letter, index) => (
                     <HeroLetter
+                      key={index}
                       variants={listItem}
                       whileHover={{
                         scale: [1, 1.2, 1.1, 1.2],
@@ -52,7 +53,7 @@ export const HeroSection: React.FC = () => {
                     </HeroLetter>
                   ))}
                   &nbsp;
-                </>
+                </div>
               ))}
             </HeroLine>
           ))}

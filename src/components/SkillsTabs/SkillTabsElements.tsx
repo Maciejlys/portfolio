@@ -35,7 +35,7 @@ export const SkillButtonWrapper = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     border-right: none;
     min-width: 300px;
     align-items: flex-end;
@@ -58,14 +58,14 @@ export const SkillButton = styled(motion.div)<SkillButtonProps>`
   height: 4rem;
   cursor: pointer;
   border-left: ${({ active }) =>
-    active ? "2px solid #64ffda" : "2px solid transparent"};
+    active ? "3px solid #64ffda" : "3px solid transparent"};
 
   @media (max-width: 960px) {
     flex-direction: row;
     border-left: none;
     padding: 20px 0;
     border-top: ${({ active }) =>
-      active ? "2px solid #64ffda" : "2px solid transparent"};
+      active ? "3px solid #64ffda" : "3px solid transparent"};
   }
 `;
 export const SkillInfo = styled(motion.div)`

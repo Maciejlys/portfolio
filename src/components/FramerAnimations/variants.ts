@@ -31,6 +31,21 @@ export const listItem = {
 };
 
 export const heroArrow = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 1 } },
+};
+
+export const projectContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+export const projectItem = {
   hidden: { opacity: 0, y: 50 },
-  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };

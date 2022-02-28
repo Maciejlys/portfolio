@@ -5,6 +5,7 @@ import HeroSection from "../modules/HeroSection";
 import Section from "../modules/Section";
 import { about, experience } from "../data/sectionData";
 import SkillsSection from "../modules/SkillsSection";
+import { ProjectsSection } from "../components/ProjectsSection";
 
 export interface NavProps {
   toggleMenu: () => void;
@@ -25,6 +26,7 @@ export const Home = () => {
       <Section {...about} />
       <Section {...experience} />
       <SkillsSection />
+      <ProjectsSection />
     </>
   );
 };

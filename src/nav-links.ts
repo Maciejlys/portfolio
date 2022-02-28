@@ -20,8 +20,4 @@ export const navigationLinks = [
     title: "My work",
     link: "work",
   },
-  {
-    title: "Contact",
-    link: "contact",
-  },
 ];
