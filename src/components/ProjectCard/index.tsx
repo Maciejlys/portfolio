@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillGithub, AiOutlineFolder, AiOutlineLink } from "react-icons/ai";
 import { projectsType } from "../../data/projectsData";
-import { OnHoverZoomClickable } from "../FramerAnimations/Motions";
 import {
   CardWrapper,
   ProjectDescription,

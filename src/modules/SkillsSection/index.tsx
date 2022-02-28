@@ -5,7 +5,6 @@ import { SklillTabs } from "../../components/SkillsTabs";
 import {
   SkillSectionBg,
   SkillSectionContainer,
-  SkillsSectionH2,
   SkillsSectionTitle,
   Title,
 } from "./SkillsElements";

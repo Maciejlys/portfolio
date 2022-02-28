@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { projects } from "../../data/projectsData";
-import { FadeInWhenVisible } from "../FramerAnimations/Motions";
 import { projectContainer, projectItem } from "../FramerAnimations/variants";
 import { ProjectCard } from "../ProjectCard";
 import {

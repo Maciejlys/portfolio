@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { skills } from "../../data/skillsData";
-import { FaAngleDoubleRight } from "react-icons/fa";
 import {
   Description,
   RightArrowIcon,
