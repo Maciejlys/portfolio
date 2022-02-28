@@ -19,13 +19,13 @@ My personal website where I can showcase my abilities and some of my work.
 - react-intersection-observer
 - react-tsparticles
 
-This was also my first time using framer motion after i discovered it\
-and it was awesome experiance! Although it wasn't working as I expected\
-at the beginning but I came through. I had a lot of fun making reveal\
+This was also my first time using framer motion after i discovered it
+and it was awesome experiance! Although it wasn't working as I expected
+at the beginning but I came through. I had a lot of fun making reveal
 animations and hover animations!
-I was struggeling with hero section, but after I found particle.js I knew\
+I was struggeling with hero section, but after I found particle.js I knew
 that I want to include it in my project.
-I also found react-fullpage so I am sure that I will use it in one of my next projects\
+I also found react-fullpage so I am sure that I will use it in one of my next projects.
 as I found it a bit to late going into this one.
 
 # What would I change?
