@@ -30,8 +30,8 @@ as I found it a bit to late going into this one.
 
 # What would I change?
 
-I think I learned alot while doing this projcet, and thats why \
-if I had to redo it I would definitely make sure to reuse more components\
-I would also make sure that animations are done correctly since the beginning\
-as it would ease up the process. Also I would use more of my time to create\
+I think I learned alot while doing this projcet, and thats why
+if I had to redo it I would definitely make sure to reuse more components
+I would also make sure that animations are done correctly since the beginning
+as it would ease up the process. Also I would use more of my time to create
 better reusable section.
