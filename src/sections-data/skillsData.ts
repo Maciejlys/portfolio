@@ -38,4 +38,12 @@ export const skills: SkillProps[] = [
       'I am more used to react context api that I used several times now and I really enjoy it, although I know that in "real life" scenerios I need to get hang of it and I am working on it.',
     ],
   },
+  {
+    order: 5,
+    title: "Framer-motion",
+    description: [
+      "I just started by journey with Framer-motion and I am in love with it.",
+      "I found it by accident and after few hours of reading through documenation it clicked and I made a use of it here on this page, all the animations and transisions were made using Framer-motion.",
+    ],
+  },
 ];

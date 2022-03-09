@@ -5,10 +5,12 @@ export const SkillSectionBg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 `;
 
 export const Title = styled.h1`
   font-weight: 600;
+  margin-top: 2rem;
 `;
 
 export const SkillSectionContainer = styled.div`
@@ -33,7 +35,5 @@ export const SkillSectionContainer = styled.div`
   }
 `;
 
-export const SkillsSectionTitle = styled.div`
-  margin-top: 5rem;
-`;
+export const SkillsSectionTitle = styled.div``;
 export const SkillsSectionH2 = styled.h2``;

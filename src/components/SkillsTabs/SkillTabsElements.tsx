@@ -6,7 +6,6 @@ export const SkillContainer = styled.div`
   width: 80vw;
   margin: 0 auto;
   max-width: 1100px;
-  min-height: 100vh;
 
   p {
     max-width: 600px;
@@ -18,7 +17,7 @@ export const SkillContainer = styled.div`
 
 export const SkillWrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 
   @media (max-width: 960px) {
@@ -36,11 +35,10 @@ export const SkillButtonWrapper = styled.div`
     flex-direction: row;
     border-bottom: 2px solid white;
     border-right: none;
-    min-width: 300px;
+    max-width: 80vw;
     align-items: flex-end;
     height: 70px;
     justify-content: flex-start;
-    overflow-x: auto;
     overflow-y: hidden;
   }
 `;
@@ -69,9 +67,9 @@ export const SkillButton = styled(motion.div)<SkillButtonProps>`
 `;
 export const SkillInfo = styled(motion.div)`
   padding: 1rem;
-  height: 50vh;
   width: 80%;
   word-break: break-word;
+  min-height: 70vh;
 
   @media (max-width: 960px) {
     width: 100%;
