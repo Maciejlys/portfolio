@@ -22,8 +22,8 @@ export const about = {
   headLine: "About me",
   description: [
     "My name is Maciej, I live in Rybnik and I am third year IT student at University of Economics in Katowice." +
-      "Currently I am looking for an internship as what I am looking for is experience and guidance under the watchful eye of experts." +
-      "I've been learning typescript, react and such on my own for a while now, but I know nothing can propel me, as much as real life work and real projects with experts helping and guiding me.",
+      " Currently I am looking for an internship as what I am looking for is experience and guidance under the watchful eye of experts." +
+      " I've been learning typescript, react and such on my own for a while now, but I know nothing can propel me, as much as real life work and real projects with experts helping and guiding me.",
   ],
   buttonLabel: "",
   buttonWrapper: true,
