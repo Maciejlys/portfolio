@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const SkillSectionBg = styled.div`
-  height: 100vh;
   background-color: rgba(10, 25, 47, 1);
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
 `;
@@ -16,7 +14,6 @@ export const Title = styled.h1`
 export const SkillSectionContainer = styled.div`
   color: #fff;
   font-weight: bold;
-  height: 100%;
   max-width: 1100px;
   display: flex;
   align-items: center;
@@ -37,6 +34,6 @@ export const SkillSectionContainer = styled.div`
 `;
 
 export const SkillsSectionTitle = styled.div`
-  justify-self: center;
+  margin-top: 5rem;
 `;
 export const SkillsSectionH2 = styled.h2``;

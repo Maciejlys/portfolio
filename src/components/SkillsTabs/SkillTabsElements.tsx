@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 export const SkillContainer = styled.div`
   width: 80vw;
-  height: 100%;
   margin: 0 auto;
   max-width: 1100px;
+  min-height: 100vh;
 
   p {
     max-width: 600px;

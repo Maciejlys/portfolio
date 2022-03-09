@@ -37,41 +37,39 @@ export const SklillTabs: React.FC<SklillTabsProps> = () => {
   }, [value]);
 
   return (
-    <>
-      <SkillContainer>
-        <SkillWrapper>
-          <SkillButtonWrapper>
-            {allSkills.map((item, index) => (
-              <SkillButton
-                onClick={() => setValue(index)}
-                active={index === value}
-                key={index}>
-                <SkillTextButton
-                  whileHover={{
-                    scale: 1.1,
-                    y: -5,
-                  }}
-                  whileTap={{ scale: 0.9, y: 5 }}>
-                  {item.title}
-                </SkillTextButton>
-              </SkillButton>
-            ))}
-          </SkillButtonWrapper>
-          <SkillInfo
-            variants={fadeInFromBottom}
-            initial="initial"
-            animate={anim ? "animate" : "initial"}>
-            <TitleH3>{title}</TitleH3>
-            {description.map((line, index) => (
-              <Description key={index}>
-                <RightArrowIcon />
-                <p>{line}</p>
-              </Description>
-            ))}
-          </SkillInfo>
-        </SkillWrapper>
-      </SkillContainer>
-    </>
+    <SkillContainer>
+      <SkillWrapper>
+        <SkillButtonWrapper>
+          {allSkills.map((item, index) => (
+            <SkillButton
+              onClick={() => setValue(index)}
+              active={index === value}
+              key={index}>
+              <SkillTextButton
+                whileHover={{
+                  scale: 1.1,
+                  y: -5,
+                }}
+                whileTap={{ scale: 0.9, y: 5 }}>
+                {item.title}
+              </SkillTextButton>
+            </SkillButton>
+          ))}
+        </SkillButtonWrapper>
+        <SkillInfo
+          variants={fadeInFromBottom}
+          initial="initial"
+          animate={anim ? "animate" : "initial"}>
+          <TitleH3>{title}</TitleH3>
+          {description.map((line, index) => (
+            <Description key={index}>
+              <RightArrowIcon />
+              <p>{line}</p>
+            </Description>
+          ))}
+        </SkillInfo>
+      </SkillWrapper>
+    </SkillContainer>
   );
 };
 

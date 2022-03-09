@@ -21,10 +21,9 @@ export const about = {
   topLine: "",
   headLine: "About me",
   description: [
-    "I started learning web development after unsuccessful bit of time with game development, " +
-      "I couldn't bring myself to do much, but after learning about react and spending" +
-      " few days learning it, something clicked and I stucked with that since!",
-    "Check out my github and linkedin here:",
+    "My name is Maciej, I live in Rybnik and I am third year IT student at University of Economics in Katowice." +
+      "Currently I am looking for an internship as what I am looking for is experience and guidance under the watchful eye of experts." +
+      "I've been learning typescript, react and such on my own for a while now, but I know nothing can propel me, as much as real life work and real projects with experts helping and guiding me.",
   ],
   buttonLabel: "",
   buttonWrapper: true,
@@ -47,7 +46,7 @@ export const experience = {
       "but what I lack in professional experience I make up " +
       "with my enthusiasm and drive to learn.",
     "Right now I am focusing on learning frontend development in " +
-      " my free time  as much as I can.",
+      " my free time.",
   ],
   buttonLabel: "button",
   imgStart: true,
